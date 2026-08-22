@@ -3,17 +3,24 @@ import { motion, useInView } from 'framer-motion';
 
 const ease = [0.22, 1, 0.36, 1] as const;
 
+import gal1 from '../../../client-photos/FB_IMG_1786900592590.jpg.jpeg';
+import gal2 from '../../../client-photos/FB_IMG_1786900486332.jpg.jpeg';
+import gal3 from '../../../client-photos/FB_IMG_1738668608742.jpg.jpeg';
+import gal4 from '../../../client-photos/FB_IMG_1786900647530.jpg.jpeg';
+import gal5 from '../../../client-photos/IMG_20250902_211003.jpg.jpeg';
+import gal6 from '../../../client-photos/FB_IMG_1786900542881.jpg.jpeg';
+
 export function Gallery() {
   const ref = useRef<HTMLElement>(null);
   const inView = useInView(ref, { once: true, margin: '-80px' });
 
   const placeholders = [
-    { src: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=800&auto=format&fit=crop', aspect: 'aspect-[3/4]', span: '' },
-    { src: 'https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=800&auto=format&fit=crop', aspect: 'aspect-square', span: '' },
-    { src: 'https://images.unsplash.com/photo-1596783074918-c84cb06531ca?q=80&w=800&auto=format&fit=crop', aspect: 'aspect-[3/4]', span: '' },
-    { src: 'https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=800&auto=format&fit=crop', aspect: 'aspect-square', span: '' },
-    { src: 'https://images.unsplash.com/photo-1469334031218-e382a71b716b?q=80&w=800&auto=format&fit=crop', aspect: 'aspect-[4/3]', span: 'col-span-2' },
-    { src: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=800&auto=format&fit=crop', aspect: 'aspect-[3/4]', span: '' },
+    { src: gal1, aspect: 'aspect-[3/4]', span: '' },
+    { src: gal2, aspect: 'aspect-square', span: '' },
+    { src: gal3, aspect: 'aspect-[3/4]', span: '' },
+    { src: gal4, aspect: 'aspect-square', span: '' },
+    { src: gal5, aspect: 'aspect-[4/3]', span: 'col-span-2' },
+    { src: gal6, aspect: 'aspect-[3/4]', span: '' },
   ];
 
   return (
@@ -44,7 +51,7 @@ export function Gallery() {
             transition={{ duration: 0.7, delay: 0.25 }}
             className="font-sans text-[#faf8f4]/40 text-xs leading-relaxed max-w-xs"
           >
-            Image placeholders — the client's photography will be placed here to showcase real work and events.
+            A curated collection of our finest moments, events, and the beautiful people who bring our designs to life.
           </motion.p>
         </div>
 
@@ -59,7 +66,7 @@ export function Gallery() {
             >
               <img
                 src={p.src}
-                alt="Gallery placeholder"
+                alt="Moments of Elegance"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 loading="lazy"
               />

@@ -1,5 +1,7 @@
 import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
+import modBg from '../../../client-photos/FB_IMG_1786900499931.jpg.jpeg';
+import modFg from '../../../client-photos/FB_IMG_1786900504857.jpg.jpeg';
 
 const ease = [0.22, 1, 0.36, 1] as const;
 
@@ -26,7 +28,7 @@ export function Modelling() {
       {/* Background image with overlay */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://images.unsplash.com/photo-1485518994671-4d600c3fc519?q=80&w=2000&auto=format&fit=crop"
+          src={modBg}
           alt=""
           aria-hidden="true"
           className="w-full h-full object-cover object-top opacity-12"
@@ -75,7 +77,7 @@ export function Modelling() {
               className="img-placeholder aspect-[4/3] max-w-sm"
             >
               <img
-                src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?q=80&w=900&auto=format&fit=crop"
+                src={modFg}
                 alt="Modelling Academy Nashik"
                 className="w-full h-full object-cover object-top"
                 loading="lazy"

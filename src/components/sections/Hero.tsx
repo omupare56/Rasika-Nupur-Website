@@ -1,5 +1,6 @@
 import { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
+import heroBg from '../../../client-photos/IMG_20250501_012200.jpg.jpeg';
 
 const ease = [0.22, 1, 0.36, 1] as const;
 
@@ -34,7 +35,7 @@ export function Hero() {
       {/* Parallax background */}
       <motion.div style={{ y: imgY }} className="absolute inset-0 z-0 will-change-transform">
         <img
-          src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=90&w=2400&auto=format&fit=crop"
+          src={heroBg}
           alt="Ms. Rasika Nupur – Luxury Fashion, Nashik"
           className="w-full h-[115%] object-cover object-[center_15%]"
           style={{ animation: 'heroZoom 2.4s cubic-bezier(0.22,1,0.36,1) forwards' }}

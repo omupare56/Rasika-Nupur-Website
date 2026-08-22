@@ -1,5 +1,6 @@
 import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
+import cottonQueenImg from '../../../client-photos/FB_IMG_1738668405119.jpg.jpeg';
 
 const ease = [0.22, 1, 0.36, 1] as const;
 
@@ -22,7 +23,7 @@ export function Ccottonqueen() {
           >
             <div className="img-placeholder aspect-[4/5] max-w-[520px] ml-auto">
               <img
-                src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?q=80&w=1200&auto=format&fit=crop"
+                src={cottonQueenImg}
                 alt="Ccottonqueen – Jaipur Cotton Collection"
                 className="w-full h-full object-cover object-top"
                 loading="lazy"

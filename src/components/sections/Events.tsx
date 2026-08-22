@@ -3,41 +3,48 @@ import { motion, useInView } from 'framer-motion';
 
 const ease = [0.22, 1, 0.36, 1] as const;
 
+import ev1 from '../../../client-photos/FB_IMG_1786900682471.jpg.jpeg';
+import ev2 from '../../../client-photos/FB_IMG_1786900596580.jpg.jpeg';
+import ev3 from '../../../client-photos/FB_IMG_1786900741646.jpg.jpeg';
+import ev4 from '../../../client-photos/FB_IMG_1786900592590.jpg.jpeg';
+import ev5 from '../../../client-photos/FB_IMG_1786900486332.jpg.jpeg';
+import ev6 from '../../../client-photos/20260110_154812.jpg.jpeg';
+
 const events = [
   {
     title: 'Fashion Shows',
     desc: 'End-to-end conceptualisation, choreography and production of high-impact fashion runway shows.',
-    img: 'https://images.unsplash.com/photo-1558769132-cb1aea458c5e?q=80&w=1000&auto=format&fit=crop',
+    img: ev1,
     wide: true,
   },
   {
     title: 'Beauty Pageants',
     desc: 'Comprehensive organisation and grooming for beauty pageants — from auditions to crowning night.',
-    img: 'https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?q=80&w=1000&auto=format&fit=crop',
+    img: ev2,
     wide: false,
   },
   {
     title: 'Corporate Fashion Events',
     desc: 'Curated fashion experiences tailored for corporate audiences and brand activations.',
-    img: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=1000&auto=format&fit=crop',
+    img: ev3,
     wide: false,
   },
   {
     title: 'Grooming Competitions',
     desc: 'Competitive grooming events that celebrate personality, poise and presentation.',
-    img: 'https://images.unsplash.com/photo-1520263115673-610416f52ab6?q=80&w=1000&auto=format&fit=crop',
+    img: ev4,
     wide: false,
   },
   {
     title: 'Talent Competitions',
     desc: 'Platforms that discover and celebrate exceptional talent across fashion and performance.',
-    img: 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=1000&auto=format&fit=crop',
+    img: ev5,
     wide: false,
   },
   {
     title: 'Event Planning & Execution',
     desc: 'Full-spectrum event management — from creative ideation through flawless on-the-night execution.',
-    img: 'https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?q=80&w=1000&auto=format&fit=crop',
+    img: ev6,
     wide: true,
   },
 ];

@@ -1,5 +1,6 @@
 import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
+import instituteImg from '../../../client-photos/FB_IMG_1786900493989.jpg.jpeg';
 
 const ease = [0.22, 1, 0.36, 1] as const;
 
@@ -72,32 +73,48 @@ export function Institute() {
       <div className="max-w-screen-xl mx-auto px-5 sm:px-8 lg:px-12">
 
         {/* Header */}
-        <div className="max-w-2xl mb-20">
-          <motion.span
-            initial={{ opacity: 0 }}
-            animate={inView ? { opacity: 1 } : {}}
-            transition={{ duration: 0.7 }}
-            className="section-eyebrow mb-7 block"
-            style={{ color: '#c9a96e' }}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
+          <div className="max-w-2xl">
+            <motion.span
+              initial={{ opacity: 0 }}
+              animate={inView ? { opacity: 1 } : {}}
+              transition={{ duration: 0.7 }}
+              className="section-eyebrow mb-7 block"
+              style={{ color: '#c9a96e' }}
+            >
+              Education
+            </motion.span>
+            <motion.h2
+              initial={{ opacity: 0, y: 24 }}
+              animate={inView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 1, delay: 0.12, ease }}
+              className="font-serif text-[#080808] text-4xl sm:text-5xl md:text-6xl leading-tight mb-6"
+            >
+              Fashion Designing<br />Institute
+            </motion.h2>
+            <motion.p
+              initial={{ opacity: 0, y: 16 }}
+              animate={inView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.9, delay: 0.25, ease }}
+              className="font-sans text-[#080808]/55 text-sm leading-[1.9]"
+            >
+              Our fashion designing institute offers structured, career-oriented courses designed to nurture creativity and technical skill — empowering the next generation of designers with knowledge, craft, and industry readiness.
+            </motion.p>
+          </div>
+          
+          <motion.div
+            initial={{ opacity: 0, x: 40 }}
+            animate={inView ? { opacity: 1, x: 0 } : {}}
+            transition={{ duration: 1.1, ease }}
+            className="img-placeholder aspect-video max-w-lg lg:ml-auto"
           >
-            Education
-          </motion.span>
-          <motion.h2
-            initial={{ opacity: 0, y: 24 }}
-            animate={inView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 1, delay: 0.12, ease }}
-            className="font-serif text-[#080808] text-4xl sm:text-5xl md:text-6xl leading-tight mb-6"
-          >
-            Fashion Designing<br />Institute
-          </motion.h2>
-          <motion.p
-            initial={{ opacity: 0, y: 16 }}
-            animate={inView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.9, delay: 0.25, ease }}
-            className="font-sans text-[#080808]/55 text-sm leading-[1.9]"
-          >
-            Our fashion designing institute offers structured, career-oriented courses designed to nurture creativity and technical skill — empowering the next generation of designers with knowledge, craft, and industry readiness.
-          </motion.p>
+            <img
+              src={instituteImg}
+              alt="Fashion Designing Students"
+              className="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </motion.div>
         </div>
 
         {/* Course grid */}

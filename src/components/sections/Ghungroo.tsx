@@ -3,18 +3,26 @@ import { motion, useInView } from 'framer-motion';
 
 const ease = [0.22, 1, 0.36, 1] as const;
 
+import img1 from '../../../client-photos/IMG_2918.JPG.jpeg';
+import img2 from '../../../client-photos/IMG_20251224_230025.jpg.jpeg';
+import img3 from '../../../client-photos/FB_IMG_1774441223031.jpg.jpeg';
+import img4 from '../../../client-photos/IMG_20250501_012000.jpg.jpeg';
+import img5 from '../../../client-photos/FB_IMG_1751541322401.jpg.jpeg';
+import img6 from '../../../client-photos/FB_IMG_1786900577964.jpg.jpeg';
+import img7 from '../../../client-photos/FB_IMG_1786900698554.jpg.jpeg';
+import img8 from '../../../client-photos/IMG_20250420_001311.jpg.jpeg';
+import img9 from '../../../client-photos/SRB_1841.JPG.jpeg';
+
 const collections = [
-  { name: 'Bridal Wear',    img: 'https://images.unsplash.com/photo-1537832816519-689ad163238b?q=80&w=800&auto=format&fit=crop', span: 'lg:col-span-2 lg:row-span-2' },
-  { name: 'Designer Sarees', img: 'https://images.unsplash.com/photo-1617137984095-74e4e5e3613f?q=80&w=800&auto=format&fit=crop', span: '' },
-  { name: 'Blouses',        img: 'https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=800&auto=format&fit=crop', span: '' },
-  { name: 'Navari Sarees',  img: 'https://images.unsplash.com/photo-1583394293184-7ca1a04f8a39?q=80&w=800&auto=format&fit=crop', span: '' },
-  { name: 'Party Wear',     img: 'https://images.unsplash.com/photo-1496747611176-843222e1e57c?q=80&w=800&auto=format&fit=crop', span: '' },
-  { name: 'Ball Gowns',     img: 'https://images.unsplash.com/photo-1534030347209-467a5b0ad3e6?q=80&w=800&auto=format&fit=crop', span: '' },
-  { name: 'Formal Shirts',  img: 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=800&auto=format&fit=crop', span: '' },
-  { name: 'Pant Blazers',   img: 'https://images.unsplash.com/photo-1598554747436-c9293d6a588f?q=80&w=800&auto=format&fit=crop', span: '' },
-  { name: 'Sherwanis',      img: 'https://images.unsplash.com/photo-1631281956016-3cdc1b2fe5fb?q=80&w=800&auto=format&fit=crop', span: '' },
-  { name: 'Fetas',          img: 'https://images.unsplash.com/photo-1589465885857-44edb59bbff2?q=80&w=800&auto=format&fit=crop', span: '' },
-  { name: 'Mojaris',        img: 'https://images.unsplash.com/photo-1574634534894-89d7576c8259?q=80&w=800&auto=format&fit=crop', span: '' },
+  { name: 'Bridal Wear',    img: img1, span: 'lg:col-span-2 lg:row-span-2' },
+  { name: 'Designer Sarees', img: img2, span: '' },
+  { name: 'Blouses',        img: img3, span: '' },
+  { name: 'Navari Sarees',  img: img4, span: '' },
+  { name: 'Party Wear',     img: img5, span: '' },
+  { name: 'Ball Gowns',     img: img6, span: '' },
+  { name: 'Formal Shirts',  img: img7, span: '' },
+  { name: 'Pant Blazers',   img: img8, span: '' },
+  { name: 'Sherwanis',      img: img9, span: '' },
 ];
 
 function CollectionCard({ item, index }: { item: typeof collections[0]; index: number }) {

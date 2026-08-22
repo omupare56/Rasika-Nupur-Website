@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
+import aboutImage from '../../../client-photos/IMG_20251224_230339.jpg.jpeg';
 
 const ease = [0.22, 1, 0.36, 1] as const;
 
@@ -33,7 +34,7 @@ export function About() {
           >
             <div className="img-placeholder aspect-[3/4] w-full max-w-[480px] mx-auto lg:mx-0">
               <img
-                src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?q=80&w=1200&auto=format&fit=crop"
+                src={aboutImage}
                 alt="Ms. Rasika Nupur – Fashion Professional"
                 className="w-full h-full object-cover object-top"
               />
