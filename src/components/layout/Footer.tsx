@@ -114,11 +114,10 @@ export function Footer() {
             <address className="not-italic space-y-3.5 mb-8">
               <div>
                 <p className="font-sans text-[11.5px] text-[#faf8f4]/50 leading-[1.85]">
-                  Arunodaya Apartment, Basement<br />
-                  Ghungroo – The Designer Brand<br />
-                  Opp. Variya TVS Showroom<br />
-                  Samarth Nagar, Mahatma Nagar<br />
-                  Nashik, Maharashtra
+                  Ghunggroo The Modelling Institute<br />
+                  1st Floor, Above Samrat Fabrics<br />
+                  Opposite Topchi, Between ABB &amp; ITI Circle<br />
+                  Trimbak Road, Nashik
                 </p>
               </div>
               <a href="tel:+919545147559" className="block font-sans text-[11.5px] text-[#faf8f4]/50 hover:text-[#c9a96e] transition-colors">

@@ -81,11 +81,10 @@ export function Contact() {
                 label: 'Address',
                 content: (
                   <p className="font-sans text-[#080808]/70 text-sm leading-[1.85]">
-                    Arunodaya Apartment, Basement<br />
-                    Ghungroo – The Designer Brand<br />
-                    Opposite Variya TVS Showroom<br />
-                    Samarth Nagar, Mahatma Nagar<br />
-                    Nashik, Maharashtra
+                    Ghunggroo The Modelling Institute<br />
+                    1st Floor, Above Samrat Fabrics<br />
+                    Opposite Topchi, Between ABB &amp; ITI Circle<br />
+                    Trimbak Road, Nashik
                   </p>
                 ),
               },

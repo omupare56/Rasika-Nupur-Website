@@ -37,34 +37,36 @@ export function Hero() {
         <img
           src={heroBg}
           alt="Ms. Rasika Nupur – Luxury Fashion, Nashik"
-          className="w-full h-[115%] object-cover object-[center_15%]"
+          className="w-full h-[115%] object-cover object-[center_20%] md:object-[center_25%]"
           style={{ animation: 'heroZoom 2.4s cubic-bezier(0.22,1,0.36,1) forwards' }}
           loading="eager"
           fetchPriority="high"
         />
       </motion.div>
 
-      {/* Cinematic overlays */}
-      <div className="absolute inset-0 z-10 bg-gradient-to-b from-[#080808]/60 via-transparent to-transparent" />
-      <div className="absolute inset-0 z-10 bg-gradient-to-t from-[#080808]/95 via-[#080808]/45 to-transparent" />
-      <div className="absolute inset-0 z-10 bg-gradient-to-r from-[#080808]/30 via-transparent to-transparent" />
+      {/* Cinematic overlays — stronger bottom gradient keeps faces clear, text readable */}
+      <div className="absolute inset-0 z-10 bg-gradient-to-b from-[#080808]/50 via-transparent to-transparent" />
+      <div className="absolute inset-0 z-10" style={{
+        background: 'linear-gradient(to top, #080808 0%, rgba(8,8,8,0.92) 18%, rgba(8,8,8,0.55) 38%, transparent 58%)'
+      }} />
+      <div className="absolute inset-0 z-10 bg-gradient-to-r from-[#080808]/40 via-[#080808]/10 to-transparent" />
 
-      {/* Content */}
-      <div className="relative z-20 w-full max-w-screen-xl mx-auto px-5 sm:px-10 lg:px-16 pb-24 md:pb-32">
-        <motion.div {...revX(0.2)} className="flex items-center gap-3 mb-6">
+      {/* Content — positioned at bottom-left, compact to stay below faces */}
+      <div className="relative z-20 w-full max-w-screen-xl mx-auto px-5 sm:px-10 lg:px-16 pb-16 sm:pb-20 md:pb-24">
+        <motion.div {...revX(0.2)} className="flex items-center gap-3 mb-4 md:mb-5">
           <span className="block h-[1px] w-10 bg-[#c9a96e]" />
           <span className="font-sans text-[9.5px] tracking-[0.38em] uppercase text-[#c9a96e]">
             Ghungroo – The Designer Brand
           </span>
         </motion.div>
 
-        <motion.h1 {...rev(0.35)} className="font-serif text-[#faf8f4] leading-[1.06] mb-7 text-4xl sm:text-[3.4rem] md:text-[4.2rem] lg:text-[4.8rem]">
+        <motion.h1 {...rev(0.35)} className="font-serif text-[#faf8f4] leading-[1.06] mb-5 md:mb-6 text-4xl sm:text-[3.4rem] md:text-[4.2rem] lg:text-[4.8rem] max-w-[680px]">
           Where Fashion<br />
           <em className="not-italic" style={{ color: '#e8d5a3' }}>Meets Confidence</em>
         </motion.h1>
 
-        <motion.div {...rev(0.55)} className="mb-9 max-w-lg">
-          <div className="flex items-center gap-3 mb-4">
+        <motion.div {...rev(0.55)} className="mb-6 md:mb-7 max-w-lg">
+          <div className="flex items-center gap-3 mb-3">
             <span className="h-[1px] w-6 bg-[#c9a96e]/50 block" />
             <span className="font-sans text-[9px] tracking-[0.3em] uppercase text-[#faf8f4]/50">Ms. Rasika Nupur</span>
           </div>
@@ -77,7 +79,7 @@ export function Hero() {
         </motion.div>
 
         {/* Service tags */}
-        <motion.div {...rev(0.7)} className="flex flex-wrap gap-2 mb-11">
+        <motion.div {...rev(0.7)} className="flex flex-wrap gap-2 mb-8 md:mb-9 max-w-[520px]">
           {services.map(s => (
             <span key={s} className="font-sans text-[9px] tracking-[0.2em] uppercase text-[#c9a96e]/70 border border-[#c9a96e]/22 px-3 py-1.5 hover:border-[#c9a96e]/65 hover:text-[#c9a96e] transition-all duration-300">
               {s}
