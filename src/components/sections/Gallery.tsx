@@ -3,27 +3,42 @@ import { motion, useInView, AnimatePresence } from 'framer-motion';
 
 const ease = [0.22, 1, 0.36, 1] as const;
 
-// ── Load all 12 client-provided gallery images via Vite glob import ──────────
-// Picks up every file inside client-photos/gallery/ automatically.
-const rawGlob = import.meta.glob(
-  '../../../client-photos/gallery/*',
-  { eager: true, as: 'url' },
-);
-
+// ── Gallery images served from public/gallery/ ────────────────────────────────
+// Files in public/ are copied verbatim to the dist root by Vite and served at /
+// in both development and Vercel production — no hashing, no path transforms.
+// This replaces the deprecated `import.meta.glob(..., { as: 'url' })` approach
+// which produced broken URLs on Vercel.
+//
 // One image needs object-fit: contain so its content isn't cropped:
 //   SJT_4306.JPG.jpeg → stage/performance photo (tall subject, important content)
 const CONTAIN_FILES = [
   'SJT_4306.JPG.jpeg',
 ];
 
-// Sort entries so order is deterministic across builds
-const photos: { src: string; alt: string; contain: boolean }[] = Object.entries(rawGlob)
-  .sort(([a], [b]) => a.localeCompare(b))
-  .map(([path, src], i) => ({
-    src: src as string,
+// Filenames sorted alphabetically — same deterministic order as before.
+const GALLERY_FILES = [
+  'Body_Shape_Editor1758046932781.jpg (1).jpeg',
+  'FB_IMG_1738668379261.jpg.jpeg',
+  'FB_IMG_1779995595915.jpg (1).jpeg',
+  'FB_IMG_1779995625777.jpg (1).jpeg',
+  'FB_IMG_1779995639772.jpg (1).jpeg',
+  'FB_IMG_1779995646515.jpg (1).jpeg',
+  'IMG_20250112_224722.jpg.jpeg',
+  'IMG_20250501_012200.jpg.jpeg',
+  'IMG_20250902_210722.jpg.jpeg',
+  'S34A0786.JPG.jpeg',
+  'SJT_4306.JPG.jpeg',
+  'SP141138.JPG (1).jpeg',
+];
+
+const photos: { src: string; alt: string; contain: boolean }[] = GALLERY_FILES.map(
+  (filename, i) => ({
+    // encodeURIComponent handles spaces, parentheses, and other special chars.
+    src: `/gallery/${encodeURIComponent(filename)}`,
     alt: `Gallery image ${i + 1} – Moments of Elegance`,
-    contain: CONTAIN_FILES.some((f) => path.endsWith(f)),
-  }));
+    contain: CONTAIN_FILES.includes(filename),
+  }),
+);
 
 // ── Lightbox component ────────────────────────────────────────────────────────
 function Lightbox({
