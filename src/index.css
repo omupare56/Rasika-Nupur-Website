@@ -44,9 +44,14 @@
 }
 
 /* ── Keyframes ──────────────────────────────── */
-@keyframes heroZoom {
-  from { transform: scale(1.08); }
-  to   { transform: scale(1); }
+@keyframes heroBloom {
+  0%, 100% { opacity: 0.09; }
+  50%       { opacity: 0.14; }
+}
+@keyframes silkDrift {
+  0%   { transform: translateY(0px) translateX(0px); }
+  50%  { transform: translateY(-6px) translateX(4px); }
+  100% { transform: translateY(0px) translateX(0px); }
 }
 @keyframes scrollBounce {
   0%, 100% { transform: translateY(0); opacity: 1; }

@@ -1,6 +1,6 @@
 import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
-import instituteImg from '../../../client-photos/FB_IMG_1786900493989.jpg.jpeg';
+import instituteImg from '../../../client-photos/institute_new.jpg';
 
 const ease = [0.22, 1, 0.36, 1] as const;
 
@@ -106,12 +106,12 @@ export function Institute() {
             initial={{ opacity: 0, x: 40 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 1.1, ease }}
-            className="img-placeholder aspect-video max-w-lg lg:ml-auto"
+            className="img-placeholder aspect-[2/3] max-w-lg lg:ml-auto"
           >
             <img
               src={instituteImg}
               alt="Fashion Designing Students"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-contain"
               loading="lazy"
             />
           </motion.div>

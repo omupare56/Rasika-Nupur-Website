@@ -181,7 +181,7 @@ export function Contact() {
                     <option>Custom Designer Outfit</option>
                     <option>Outfit Rental</option>
                     <option>Fashion Designing Course</option>
-                    <option>Modelling Training</option>
+                    <option>Modelling/Pageants Training</option>
                     <option>Fashion Show / Event</option>
                     <option>Beauty Pageant</option>
                     <option>Ccottonqueen – Cotton Dresses</option>

@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
-import aboutImage from '../../../client-photos/IMG_20251224_230339.jpg.jpeg';
+import aboutImage from '../../../client-photos/about_image.jpg';
 
 const ease = [0.22, 1, 0.36, 1] as const;
 
@@ -11,7 +11,7 @@ const pillars = [
   { title: 'Fashion Choreography', desc: 'Orchestrating runway shows and fashion events with precision and artistry.' },
   { title: 'Designer Clothing', desc: 'Bespoke outfits crafted and customised according to your vision and occasion.' },
   { title: 'Fashion Education', desc: 'Structured courses nurturing the next generation of fashion designers.' },
-  { title: 'Modelling Training', desc: 'Grooming confident models — from posture to portfolio.' },
+  { title: 'Modelling/Pageants Training', desc: 'Grooming confident models — from posture to portfolio.' },
   { title: 'Fashion Events', desc: 'End-to-end planning of fashion shows, pageants and corporate events.' },
 ];
 
@@ -20,7 +20,7 @@ export function About() {
   const inView = useInView(ref, { once: true, margin: '-80px' });
 
   return (
-    <section ref={ref} id="about" className="bg-[#080808] text-[#faf8f4] py-28 md:py-36 overflow-hidden">
+    <section ref={ref} id="about" className="bg-[#240C12] text-[#faf8f4] py-28 md:py-36 overflow-hidden">
       <div className="max-w-screen-xl mx-auto px-5 sm:px-8 lg:px-12">
 
         {/* Two-column intro */}
@@ -36,7 +36,7 @@ export function About() {
               <img
                 src={aboutImage}
                 alt="Ms. Rasika Nupur – Fashion Professional"
-                className="w-full h-full object-cover object-top"
+                className="w-full h-full object-contain"
               />
             </div>
             {/* Floating label card */}

@@ -4,25 +4,23 @@ import { motion, useInView } from 'framer-motion';
 const ease = [0.22, 1, 0.36, 1] as const;
 
 import img1 from '../../../client-photos/IMG_2918.JPG.jpeg';
-import img2 from '../../../client-photos/IMG_20251224_230025.jpg.jpeg';
-import img3 from '../../../client-photos/FB_IMG_1774441223031.jpg.jpeg';
-import img4 from '../../../client-photos/IMG_20250501_012000.jpg.jpeg';
-import img5 from '../../../client-photos/FB_IMG_1751541322401.jpg.jpeg';
-import img6 from '../../../client-photos/FB_IMG_1786900577964.jpg.jpeg';
-import img7 from '../../../client-photos/FB_IMG_1786900698554.jpg.jpeg';
-import img8 from '../../../client-photos/IMG_20250420_001311.jpg.jpeg';
-import img9 from '../../../client-photos/SRB_1841.JPG.jpeg';
+import img2 from '../../../client-photos/kids_wear.jpg';
+import img3 from '../../../client-photos/designer_sarees.jpg';
+import img4 from '../../../client-photos/mens_wear.jpg';
+import img5 from '../../../client-photos/party_wear.jpg';
+import img6 from '../../../client-photos/maternity_wear.jpg';
+import img7 from '../../../client-photos/ball_gowns.jpg';
+import img8 from '../../../client-photos/formal_wear.jpg';
 
 const collections = [
-  { name: 'Bridal Wear',    img: img1, span: 'lg:col-span-2 lg:row-span-2' },
-  { name: 'Designer Sarees', img: img2, span: '' },
-  { name: 'Blouses',        img: img3, span: '' },
-  { name: 'Navari Sarees',  img: img4, span: '' },
+  { name: 'Festival Collection',    img: img1, span: 'lg:col-span-2 lg:row-span-2' },
+  { name: 'Maternity Wear', img: img6, span: '' },
+  { name: 'Bridal Wear', img: img3, span: '' },
   { name: 'Party Wear',     img: img5, span: '' },
-  { name: 'Ball Gowns',     img: img6, span: '' },
-  { name: 'Formal Shirts',  img: img7, span: '' },
-  { name: 'Pant Blazers',   img: img8, span: '' },
-  { name: 'Sherwanis',      img: img9, span: '' },
+  { name: 'Ball Gowns',     img: img7, span: '' },
+  { name: 'Men\'s Wear',    img: img4, span: '' },
+  { name: 'Formal Wear',    img: img8, span: '' },
+  { name: 'Kids Wear',      img: img2, span: '' },
 ];
 
 function CollectionCard({ item, index }: { item: typeof collections[0]; index: number }) {
@@ -83,7 +81,7 @@ export function Ghungroo() {
               transition={{ duration: 1, delay: 0.12, ease }}
               className="font-serif text-[#080808] text-4xl sm:text-5xl md:text-6xl leading-tight"
             >
-              Ghungroo
+              Ghhunggroo
             </motion.h2>
             <motion.p
               initial={{ opacity: 0, y: 16 }}
@@ -102,14 +100,14 @@ export function Ghungroo() {
             className="lg:max-w-md"
           >
             <p className="font-sans text-[#080808]/60 text-sm leading-[1.95] mb-4">
-              At Ghungroo – The Designer Brand, we design and customise premium outfits according to each customer's unique needs, occasion, and budget. Whether it is an intimate ceremony or a grand celebration, every creation is crafted with care and artistry.
+              At Ghhunggroo, The Designer Brand, we design and customise premium outfits according to each customer's unique needs, occasion, and budget. Whether it is an intimate ceremony or a grand celebration, every creation is crafted with care and artistry.
             </p>
             <p className="font-sans text-[#080808]/60 text-sm leading-[1.95]">
-              Premium designer outfits are also available on rent — allowing you to wear exquisite fashion for every occasion without compromise.
+              Premium designer outfits are also available on rent, allowing you to wear exquisite fashion for every occasion without compromise.
             </p>
             <div className="flex items-center gap-3 mt-7">
               <span className="h-[1px] w-8 bg-[#c9a96e]/50 block" />
-              <span className="font-sans text-[9px] tracking-[0.28em] uppercase text-[#080808]/40">Design · Customise · Rent</span>
+              <span className="font-sans text-[9px] tracking-[0.28em] uppercase text-[#080808]/40">Design, Customise, Rent</span>
             </div>
           </motion.div>
         </div>
@@ -117,8 +115,8 @@ export function Ghungroo() {
         {/* Two feature callouts */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-px bg-[#c9a96e]/15 mb-6">
           {[
-            { icon: '✦', label: 'Custom Design', desc: 'Outfits tailored to your vision, occasion and budget.' },
-            { icon: '◇', label: 'Rental Studio', desc: 'Premium designer outfits available for rent.' },
+            { icon: '✦', label: 'Custom Design', desc: 'Customize outfits to your vision, occasion and budget.' },
+            { icon: '◇', label: 'Rental Studio', desc: 'Premium designer outfits available on rent.' },
           ].map(f => (
             <div key={f.label} className="bg-[#faf8f4] px-8 py-8 flex items-start gap-5">
               <span className="text-[#c9a96e] text-lg mt-0.5">{f.icon}</span>

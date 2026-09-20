@@ -12,7 +12,7 @@ const services = [
 const navigate = [
   { label: 'Home',             href: '#home' },
   { label: 'About',            href: '#about' },
-  { label: 'Ghungroo Brand',   href: '#ghungroo' },
+  { label: 'Ghhunggroo Brand',   href: '#ghungroo' },
   { label: 'Ccottonqueen',     href: '#ccottonqueen' },
   { label: 'Fashion Institute', href: '#institute' },
   { label: 'Modelling Academy', href: '#modelling' },
@@ -71,7 +71,7 @@ export function Footer() {
             {/* Brands */}
             <div className="space-y-2 mb-7">
               <p className="font-sans text-[8px] tracking-[0.28em] uppercase text-[#c9a96e]/60 mb-3">Our Brands</p>
-              <p className="font-serif text-[#faf8f4]/70 text-sm">Ghungroo – The Designer Brand</p>
+              <p className="font-serif text-[#faf8f4]/70 text-sm">Ghhunggroo – The Designer Brand</p>
               <p className="font-serif text-[#faf8f4]/70 text-sm">Ccottonqueen</p>
             </div>
             {/* Socials */}

@@ -118,7 +118,7 @@ export function Modelling() {
               className="mt-10"
             >
               <a href="#contact" className="inline-flex items-center gap-3 bg-[#c9a96e] text-[#080808] px-9 py-4 font-sans text-[9.5px] tracking-[0.28em] uppercase hover:bg-[#e8d5a3] transition-colors duration-300">
-                Apply for Modelling Training
+                Apply for Modelling/Pageants Training
               </a>
             </motion.div>
           </div>

@@ -6,6 +6,7 @@ import { About }        from './components/sections/About';
 import { Ghungroo }     from './components/sections/Ghungroo';
 import { Ccottonqueen } from './components/sections/Ccottonqueen';
 import { Institute }    from './components/sections/Institute';
+import { FaceOfMaharashtra } from './components/sections/FaceOfMaharashtra';
 import { Modelling }    from './components/sections/Modelling';
 import { Events }       from './components/sections/Events';
 import { Gallery }      from './components/sections/Gallery';
@@ -20,6 +21,7 @@ function App() {
         <About />
         <Ghungroo />
         <Ccottonqueen />
+        <FaceOfMaharashtra />
         <Institute />
         <Modelling />
         <Events />
