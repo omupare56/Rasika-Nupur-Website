@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!--
+    Single-page React application.
+    The site is served entirely from the root URL; all sections are
+    anchor-hash destinations within the same page.  Search engines
+    index the full page content from the root URL alone.
+    Fragment (#) URLs are intentionally omitted from the sitemap
+    per the Sitemaps.org specification (fragments are not crawlable).
+  -->
+
+  <url>
+    <loc>https://ghhunggroo.com/</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+</urlset>
