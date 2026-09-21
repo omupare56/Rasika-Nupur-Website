@@ -1,4 +1,4 @@
-﻿import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 // NOTE: Place the PhonePe QR image at this exact path:
 //   client-photos/face-of-maharashtra/phonepe_qr.jpg
@@ -98,7 +98,7 @@ export function Session06Registration({ isOpen, onClose }: Session06Registration
   const handleWhatsApp = () => {
     if (!validate()) return;
     const msg = [
-      "FACE OF MAHARASHTRA — SEASON 6",
+      "FACE OF MAHARASHTRA: SEASON 6",
       "NASHIK AUDITION REGISTRATION",
       "",
       `Name: ${form.name}`,
@@ -339,7 +339,7 @@ export function Session06Registration({ isOpen, onClose }: Session06Registration
               </p>
               {/* QR Code */}
               <div className="flex flex-col items-center mb-6">
-                <div className="border border-[#c9a96e]/20 p-4 inline-flex items-center justify-center mb-3 bg-white">
+                <div className="border border-[#c9a96e]/20 p-4 w-52 mx-auto flex items-center justify-center mb-3 bg-white">
                   <img src={phonePeQR} alt="PhonePe QR Code" className="w-52 h-auto max-w-full object-contain" />
                 </div>
                 <p className="font-sans text-[9px] tracking-[0.22em] uppercase text-[#c9a96e]/50">Pay via PhonePe</p>

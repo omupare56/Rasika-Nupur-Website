@@ -5,7 +5,7 @@ const ease = [0.22, 1, 0.36, 1] as const;
 
 // ── Gallery images served from public/gallery/ ────────────────────────────────
 // Files in public/ are copied verbatim to the dist root by Vite and served at /
-// in both development and Vercel production — no hashing, no path transforms.
+// in both development and Vercel production - no hashing, no path transforms.
 // This replaces the deprecated `import.meta.glob(..., { as: 'url' })` approach
 // which produced broken URLs on Vercel.
 //
@@ -15,7 +15,7 @@ const CONTAIN_FILES = [
   'SJT_4306.JPG.jpeg',
 ];
 
-// Filenames sorted alphabetically — same deterministic order as before.
+// Filenames sorted alphabetically - same deterministic order as before.
 const GALLERY_FILES = [
   'Body_Shape_Editor1758046932781.jpg (1).jpeg',
   'FB_IMG_1738668379261.jpg.jpeg',
@@ -168,7 +168,7 @@ export function Gallery() {
       <section ref={ref} id="gallery" className="bg-[#080808] py-28 md:py-36 overflow-hidden">
         <div className="max-w-screen-xl mx-auto px-5 sm:px-8 lg:px-12">
 
-          {/* ── Section header — unchanged ──────────────────────────── */}
+          {/* == Section header - unchanged =========================== */}
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-16">
             <div>
               <motion.span

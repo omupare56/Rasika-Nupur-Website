@@ -7,7 +7,7 @@ const ease = [0.22, 1, 0.36, 1] as const;
 const courses = [
   {
     name: 'Complete Designer Diploma',
-    desc: 'A comprehensive programme covering the full spectrum of fashion design — from conceptualisation and sketching to garment construction and final presentation.',
+    desc: 'A comprehensive programme covering the full spectrum of fashion design, from conceptualisation and sketching to garment construction and final presentation.',
     tag: 'Diploma',
   },
   {
@@ -17,12 +17,12 @@ const courses = [
   },
   {
     name: 'Textile Designing',
-    desc: 'Explore the art of textile creation — understanding fabrics, weaves, prints, and surface design techniques.',
+    desc: 'Explore the art of textile creation: understanding fabrics, weaves, prints, and surface design techniques.',
     tag: 'Specialisation',
   },
   {
     name: 'Hand Embroidery & Aari Work',
-    desc: 'Learn the intricate crafts of hand embroidery and Aari needle work — a timeless skill in high demand across bridal and couture fashion.',
+    desc: 'Learn the intricate crafts of hand embroidery and Aari needle work, a timeless skill in high demand across bridal and couture fashion.',
     tag: 'Craft',
   },
   {
@@ -32,7 +32,7 @@ const courses = [
   },
   {
     name: 'Fashion Illustration',
-    desc: 'Develop the ability to visualise and communicate fashion ideas through professional illustration — the language of every designer.',
+    desc: 'Develop the ability to visualise and communicate fashion ideas through professional illustration, the language of every designer.',
     tag: 'Creative',
   },
 ];
@@ -98,7 +98,7 @@ export function Institute() {
               transition={{ duration: 0.9, delay: 0.25, ease }}
               className="font-sans text-[#080808]/55 text-sm leading-[1.9]"
             >
-              Our fashion designing institute offers structured, career-oriented courses designed to nurture creativity and technical skill — empowering the next generation of designers with knowledge, craft, and industry readiness.
+              Our fashion designing institute offers structured, career-oriented courses designed to nurture creativity and technical skill, empowering the next generation of designers with knowledge, craft, and industry readiness.
             </motion.p>
           </div>
           

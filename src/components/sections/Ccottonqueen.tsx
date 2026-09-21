@@ -14,7 +14,7 @@ export function Ccottonqueen() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
 
-          {/* Right: image — shown first on mobile via order */}
+          {/* Right: image - shown first on mobile via order */}
           <motion.div
             initial={{ opacity: 0, x: 40 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
@@ -31,7 +31,7 @@ export function Ccottonqueen() {
               <div className="absolute inset-0 bg-gradient-to-t from-[#080808]/30 to-transparent" />
             </div>
             {/* Badge */}
-            <div className="absolute top-6 -left-4 lg:-left-10 bg-[#080808] border border-[#c9a96e]/30 px-5 py-4">
+            <div className="absolute bottom-6 lg:bottom-auto lg:top-6 -left-4 lg:-left-10 bg-[#080808] border border-[#c9a96e]/30 px-5 py-4">
               <p className="font-sans text-[8px] tracking-[0.3em] uppercase text-[#c9a96e] mb-1">Speciality</p>
               <p className="font-serif text-[#faf8f4] text-sm">Jaipuri Cotton</p>
             </div>
@@ -75,7 +75,7 @@ export function Ccottonqueen() {
                 Ccottonqueen is a dedicated fashion brand specialising in the manufacture, wholesale, and retail of high-quality Jaipur cotton dresses, bringing the craftsmanship and heritage of Jaipur's celebrated textile tradition to modern wardrobes.
               </p>
               <p className="font-sans text-[#faf8f4]/58 text-sm leading-[1.95] mb-10">
-                Every piece in the collection is chosen for its fabric quality, comfort, and authenticity — making Ccottonqueen the preferred destination for those who value effortless elegance in everyday fashion.
+                Every piece in the collection is chosen for its fabric quality, comfort, and authenticity, making Ccottonqueen the preferred destination for those who value effortless elegance in everyday fashion.
               </p>
 
               {/* Three pillars */}

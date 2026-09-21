@@ -35,7 +35,7 @@ export function Hero() {
           Rendered back-to-front. All pure CSS / SVG, no images.
       ───────────────────────────────────────────────────────────────── */}
 
-      {/* Layer 1 — Deep obsidian base with subtle warm offset
+      {/* Layer 1 - Deep obsidian base with subtle warm offset
           The ellipse center is slightly above-right so the canvas feels
           'open' in the upper area and progressively darker toward edges. */}
       <div
@@ -47,8 +47,8 @@ export function Hero() {
         }}
       />
 
-      {/* Layer 2 — Primary champagne focal glow, upper-center
-          This is the 'editorial spotlight' — the warm tone that reads as
+      {/* Layer 2 - Primary champagne focal glow, upper-center
+          This is the 'editorial spotlight' - the warm tone that reads as
           intentional studio light. Slightly increased from 9% → 15% so
           it registers on calibrated and uncalibrated screens alike. */}
       <div
@@ -60,7 +60,7 @@ export function Hero() {
         }}
       />
 
-      {/* Layer 3 — Secondary warm bloom anchored bottom-left
+      {/* Layer 3 - Secondary warm bloom anchored bottom-left
           Sits directly behind the typographic content area so there is
           perceptible depth below the heading without any box/card. */}
       <div
@@ -72,7 +72,7 @@ export function Hero() {
         }}
       />
 
-      {/* Layer 4 — Right-edge dark counterweight
+      {/* Layer 4 - Right-edge dark counterweight
           Keeps the right side moody and prevents the warm glow from
           bleeding uniformly across the full width. */}
       <div
@@ -84,7 +84,7 @@ export function Hero() {
         }}
       />
 
-      {/* Layer 5 — Bottom-to-top vignette for text legibility
+      {/* Layer 5 - Bottom-to-top vignette for text legibility
           Heavier at the very bottom (where content lives) and fades to
           transparent before reaching the mid-section so the upper glow
           remains visible. */}
@@ -97,7 +97,7 @@ export function Hero() {
         }}
       />
 
-      {/* Layer 6 — Top dark band (navbar region contrast) */}
+      {/* Layer 6 - Top dark band (navbar region contrast) */}
       <div
         aria-hidden="true"
         className="absolute inset-0 z-0"
@@ -108,7 +108,7 @@ export function Hero() {
       />
 
       {/* ─────────────────────────────────────────────────────────────────
-          Layer 7 — SVG atmospheric silk / fabric flows
+          Layer 7 - SVG atmospheric silk / fabric flows
           Three wide Bézier sweeps with champagne fill that read as
           light catching draped fabric.  Corner ornaments add quiet
           editorial geometry.  All hard lines removed.
@@ -121,20 +121,20 @@ export function Hero() {
         xmlns="http://www.w3.org/2000/svg"
       >
         <defs>
-          {/* Upper sweep — warm champagne, heaviest at arc peak */}
+          {/* Upper sweep - warm champagne, heaviest at arc peak */}
           <linearGradient id="hSilk1" x1="0%" y1="0%" x2="100%" y2="100%">
             <stop offset="0%"   stopColor="#c9a96e" stopOpacity="0" />
             <stop offset="35%"  stopColor="#e8d5a3" stopOpacity="0.055" />
             <stop offset="62%"  stopColor="#c9a96e" stopOpacity="0.028" />
             <stop offset="100%" stopColor="#a07840" stopOpacity="0" />
           </linearGradient>
-          {/* Mid sweep — slightly cooler so it reads as shadow not glow */}
+          {/* Mid sweep - slightly cooler so it reads as shadow not glow */}
           <linearGradient id="hSilk2" x1="100%" y1="0%" x2="0%" y2="100%">
             <stop offset="0%"   stopColor="#b89060" stopOpacity="0" />
             <stop offset="40%"  stopColor="#d4b87a" stopOpacity="0.038" />
             <stop offset="100%" stopColor="#a07840" stopOpacity="0" />
           </linearGradient>
-          {/* Lower sweep — very faint, gives depth to the lower canvas */}
+          {/* Lower sweep - very faint, gives depth to the lower canvas */}
           <linearGradient id="hSilk3" x1="0%" y1="100%" x2="100%" y2="0%">
             <stop offset="0%"   stopColor="#c9a96e" stopOpacity="0" />
             <stop offset="50%"  stopColor="#c9a96e" stopOpacity="0.022" />
@@ -147,13 +147,13 @@ export function Hero() {
           </filter>
         </defs>
 
-        {/* Silk arc 1 — wide upper sweep, filled shape */}
+        {/* Silk arc 1 - wide upper sweep, filled shape */}
         <path
           d="M -120 380 C 180 160, 500 500, 780 280 S 1160 60, 1560 220 L 1560 -10 L -120 -10 Z"
           fill="url(#hSilk1)"
         />
 
-        {/* Silk arc 2 — mid-canvas floating drape */}
+        {/* Silk arc 2 - mid-canvas floating drape */}
         <path
           d="M -120 620 C 240 430, 560 720, 860 510 S 1260 300, 1560 480"
           fill="none"
@@ -161,7 +161,7 @@ export function Hero() {
           strokeWidth="220"
         />
 
-        {/* Silk arc 3 — lower anchoring drape */}
+        {/* Silk arc 3 - lower anchoring drape */}
         <path
           d="M 200 920 C 460 730, 800 890, 1080 680 S 1380 490, 1560 640"
           fill="none"
@@ -169,7 +169,7 @@ export function Hero() {
           strokeWidth="160"
         />
 
-        {/* Corner ornament — top left only, very restrained */}
+        {/* Corner ornament - top left only, very restrained */}
         <path
           d="M 40 40 L 40 86 M 40 40 L 86 40"
           stroke="#c9a96e"
@@ -178,7 +178,7 @@ export function Hero() {
           opacity="0.22"
           filter="url(#ornGlow)"
         />
-        {/* Corner ornament — top right */}
+        {/* Corner ornament - top right */}
         <path
           d="M 1400 40 L 1400 86 M 1400 40 L 1354 40"
           stroke="#c9a96e"
@@ -190,7 +190,7 @@ export function Hero() {
       </svg>
 
       {/* ─────────────────────────────────────────────────────────────────
-          Layer 8 — Warm editorial glow BEHIND THE HEADING
+          Layer 8 - Warm editorial glow BEHIND THE HEADING
           Content sits at the bottom-left of the viewport.
           The h1 starts at roughly 65–72% from the top.
           This bloom is therefore anchored at ~(20%, 70%) so it wraps
@@ -213,10 +213,10 @@ export function Hero() {
       />
 
       {/* ─────────────────────────────────────────────────────────────────
-          Layer 9 — Film grain / silk texture
+          Layer 9 - Film grain / silk texture
           SVG feTurbulence noise tiled at small scale.
           soft-light blend is effective on near-black; overlay is not.
-          Opacity kept low — just enough to break up flat digital bands.
+          Opacity kept low - just enough to break up flat digital bands.
       ───────────────────────────────────────────────────────────────── */}
       <div
         aria-hidden="true"

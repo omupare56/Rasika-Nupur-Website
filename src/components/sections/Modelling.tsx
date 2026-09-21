@@ -66,7 +66,7 @@ export function Modelling() {
               transition={{ duration: 0.9, delay: 0.28, ease }}
               className="font-sans text-[#faf8f4]/55 text-sm leading-[1.9] mb-10"
             >
-              A trailblazing institution dedicated to grooming confident, camera-ready models from the ground up — covering every dimension of professional modelling, from posture to personal branding.
+              A trailblazing institution dedicated to grooming confident, camera-ready models from the ground up, covering every dimension of professional modelling, from posture to personal branding.
             </motion.p>
 
             {/* Image */}

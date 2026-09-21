@@ -66,7 +66,7 @@ export function Footer() {
               <span className="font-sans text-[7.5px] tracking-[0.32em] uppercase text-[#c9a96e] mt-1">Luxury Fashion · Nashik</span>
             </a>
             <p className="font-sans text-[#faf8f4]/42 text-[12.5px] leading-[1.9] max-w-[290px] mb-8">
-              A multifaceted luxury fashion house under the creative vision of Ms. Rasika Nupur — bringing designer clothing, education, modelling, and event excellence under one identity.
+              A multifaceted luxury fashion house under the creative vision of Ms. Rasika Nupur, bringing designer clothing, education, modelling, and event excellence under one identity.
             </p>
             {/* Brands */}
             <div className="space-y-2 mb-7">

@@ -7,6 +7,7 @@ const navLinks = [
   { name: 'About',     href: '#about' },
   { name: 'Ghhunggroo',  href: '#ghungroo' },
   { name: 'Ccottonqueen', href: '#ccottonqueen' },
+  { name: 'Pageant',      href: '#face-of-maharashtra' },
   { name: 'Institute', href: '#institute' },
   { name: 'Modelling', href: '#modelling' },
   { name: 'Events',    href: '#events' },

@@ -11,7 +11,7 @@ const pillars = [
   { title: 'Fashion Choreography', desc: 'Orchestrating runway shows and fashion events with precision and artistry.' },
   { title: 'Designer Clothing', desc: 'Bespoke outfits crafted and customised according to your vision and occasion.' },
   { title: 'Fashion Education', desc: 'Structured courses nurturing the next generation of fashion designers.' },
-  { title: 'Modelling/Pageants Training', desc: 'Grooming confident models — from posture to portfolio.' },
+  { title: 'Modelling/Pageants Training', desc: 'Grooming confident models, from posture to portfolio.' },
   { title: 'Fashion Events', desc: 'End-to-end planning of fashion shows, pageants and corporate events.' },
 ];
 
@@ -78,7 +78,7 @@ export function About() {
                 Ms. Rasika Nupur is a multifaceted creative professional who has brought together the worlds of fashion styling, beauty consultation, and choreography under a single, distinctive identity rooted in Nashik.
               </p>
               <p className="font-sans text-[#faf8f4]/60 text-sm leading-[1.9] mb-8">
-                Every service she delivers — from bespoke designer outfits and outfit rentals to structured fashion education and professional modelling training — is executed with creativity, elegance, and deeply personalised attention.
+                Every service she delivers, from bespoke designer outfits and outfit rentals to structured fashion education and professional modelling training, is executed with creativity, elegance, and deeply personalised attention.
               </p>
               <a href="#contact" className="inline-flex items-center gap-3 font-sans text-[9.5px] tracking-[0.28em] uppercase text-[#c9a96e] border-b border-[#c9a96e]/40 pb-1 hover:border-[#c9a96e] transition-colors duration-300">
                 Get in Touch →

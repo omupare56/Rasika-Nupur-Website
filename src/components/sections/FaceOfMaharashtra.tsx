@@ -172,14 +172,14 @@ export function FaceOfMaharashtra() {
 
   return (
     <>
-      {/* ── Deep maroon-tinted dark background — pageant stage feel ─────── */}
+      {/* Deep maroon-tinted dark background - pageant stage feel */}
       <section
         ref={ref}
         id="face-of-maharashtra"
         className="text-[#faf8f4] py-28 md:py-36 overflow-hidden relative"
         style={{ background: '#0a0406' }}
       >
-        {/* Subtle warm radial tint — stage-lighting depth, barely perceptible */}
+        {/* Subtle warm radial tint - stage-lighting depth, barely perceptible */}
         <div
           aria-hidden
           style={{
@@ -192,9 +192,9 @@ export function FaceOfMaharashtra() {
 
         <div className="max-w-screen-xl mx-auto px-5 sm:px-8 lg:px-12 relative">
 
-          {/* ── INTRO ────────────────────────────────────────────────────── */}
+          {/* INTRO */}
           <div className="max-w-2xl mb-24">
-            {/* Pageant eyebrow — gold lines from site's section-eyebrow utility */}
+            {/* Pageant eyebrow - gold lines from site's section-eyebrow utility */}
             <motion.span
               initial={{ opacity: 0 }}
               animate={inView ? { opacity: 1 } : {}}
@@ -217,7 +217,7 @@ export function FaceOfMaharashtra() {
               Face of Maharashtra is a prestigious beauty and personality pageant established in 2020, created to discover, nurture and celebrate individuals across diverse age groups and backgrounds. With dedicated categories for Kids, Teens, Miss, Mr. and Mrs., the pageant provides a professional platform for aspiring models, performers and confident individuals to showcase their personality, talent, elegance and individuality.
             </motion.p>
 
-            {/* Editorial pull-quote — gold left-border accent */}
+            {/* Editorial pull-quote - gold left-border accent */}
             <motion.div
               {...revY(0.33)}
               style={{ borderLeft: '2px solid rgba(201,169,110,0.45)', paddingLeft: '1.25rem' }}
@@ -228,7 +228,7 @@ export function FaceOfMaharashtra() {
             </motion.div>
           </div>
 
-          {/* ── GROOMING EXPERIENCE ──────────────────────────────────────── */}
+          {/* GROOMING EXPERIENCE */}
           <div className="divider-gold mb-16">
             <span className="font-sans text-[9px] tracking-[0.32em] uppercase text-[#c9a96e]/60 whitespace-nowrap">The Grooming Experience</span>
           </div>
@@ -254,7 +254,7 @@ export function FaceOfMaharashtra() {
             </div>
           </motion.div>
 
-          {/* ── BEYOND THE CROWN ─────────────────────────────────────────── */}
+          {/* BEYOND THE CROWN */}
           <div className="divider-gold mb-16">
             <span className="font-sans text-[9px] tracking-[0.32em] uppercase text-[#c9a96e]/60 whitespace-nowrap">Beyond the Crown</span>
           </div>
@@ -285,7 +285,7 @@ export function FaceOfMaharashtra() {
             </div>
           </motion.div>
 
-          {/* ── AGE / JOURNEY + OUR PROMISE ──────────────────────────────── */}
+          {/* AGE / JOURNEY + OUR PROMISE */}
           <div className="divider-gold mb-16">
             <span className="font-sans text-[9px] tracking-[0.32em] uppercase text-[#c9a96e]/60 whitespace-nowrap">A Platform for Every Age</span>
           </div>
@@ -297,7 +297,7 @@ export function FaceOfMaharashtra() {
                   A Platform for Every Age, a Journey for Every Dream
                 </h3>
                 <p className="font-sans text-[#faf8f4]/55 text-sm leading-[1.95] mb-8">
-                  Face of Maharashtra celebrates confidence, personality, talent, discipline, communication and individuality across all age groups — from children discovering their first stage to women and men reclaiming their spotlight.
+                  Face of Maharashtra celebrates confidence, personality, talent, discipline, communication and individuality across all age groups, from children discovering their first stage to women and men reclaiming their spotlight.
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {['Kids', 'Teens', 'Miss', 'Mr.', 'Mrs.'].map((cat) => (
@@ -322,7 +322,7 @@ export function FaceOfMaharashtra() {
             </div>
           </motion.div>
 
-          {/* ── PREVIOUS SESSIONS ────────────────────────────────────────── */}
+          {/* PREVIOUS SESSIONS */}
           <div className="divider-gold mb-16">
             <span className="font-sans text-[9px] tracking-[0.32em] uppercase text-[#c9a96e]/60 whitespace-nowrap">Previous Sessions</span>
           </div>
@@ -372,7 +372,7 @@ export function FaceOfMaharashtra() {
                 );
               })}
 
-              {/* Session 06 — Upcoming (disabled) */}
+              {/* Session 06 - Upcoming (disabled) */}
               <button
                 disabled
                 className="relative overflow-hidden text-left px-5 py-6 opacity-55 cursor-default"
@@ -414,7 +414,7 @@ export function FaceOfMaharashtra() {
             </AnimatePresence>
           </motion.div>
 
-          {/* ── SESSION 06 — UPCOMING (full card) ────────────────────────── */}
+          {/* SESSION 06 - UPCOMING (full card) */}
           <motion.div {...revY(0.15)} className="mt-20">
             <div style={{ border: '1px solid rgba(201,169,110,0.28)' }} className="overflow-hidden">
               <div className="px-8 py-5 flex items-center justify-between gap-4" style={{ background: 'rgba(201,169,110,0.06)', borderBottom: '1px solid rgba(201,169,110,0.15)' }}>

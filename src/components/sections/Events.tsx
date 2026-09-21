@@ -19,7 +19,7 @@ const events = [
   },
   {
     title: 'Beauty Pageants',
-    desc: 'Comprehensive organisation and grooming for beauty pageants — from auditions to crowning night.',
+    desc: 'Comprehensive organisation and grooming for beauty pageants, from auditions to crowning night.',
     img: ev2,
     wide: false,
   },
@@ -43,7 +43,7 @@ const events = [
   },
   {
     title: 'Event Planning & Execution',
-    desc: 'Full-spectrum event management — from creative ideation through flawless on-the-night execution.',
+    desc: 'Full-spectrum event management, from creative ideation through flawless on-the-night execution.',
     img: ev6,
     wide: true,
   },
@@ -84,7 +84,7 @@ export function Events() {
             transition={{ duration: 0.9, delay: 0.28, ease }}
             className="font-sans text-[#080808]/55 text-sm leading-[1.9] max-w-sm md:text-right"
           >
-            From intimate grooming showcases to large-scale fashion productions — every event is crafted with vision, precision and artistry.
+            From intimate grooming showcases to large-scale fashion productions, every event is crafted with vision, precision and artistry.
           </motion.p>
         </div>
 
