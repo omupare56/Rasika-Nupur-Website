@@ -234,7 +234,7 @@ export function Hero() {
       {/* ─────────────────────────────────────────────────────────────────
           CONTENT  (z-20, unchanged)
       ───────────────────────────────────────────────────────────────── */}
-      <div className="relative z-20 w-full max-w-screen-xl mx-auto px-5 sm:px-10 lg:px-16 pb-16 sm:pb-20 md:pb-24">
+      <div className="relative z-20 w-full max-w-screen-xl mx-auto px-5 sm:px-10 lg:px-16 pb-28 sm:pb-20 md:pb-24">
         <motion.div {...revX(0.2)} className="flex items-center gap-3 mb-4 md:mb-5">
           <span className="block h-[1px] w-10 bg-[#c9a96e]" />
           <span className="font-sans text-[9.5px] tracking-[0.38em] uppercase text-[#c9a96e]">
