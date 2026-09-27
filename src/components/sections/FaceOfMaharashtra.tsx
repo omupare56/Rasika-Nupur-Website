@@ -58,14 +58,15 @@ import s5_4 from '../../../client-photos/face-of-maharashtra/session-5/SRB_2205.
 import s5_5 from '../../../client-photos/face-of-maharashtra/session-5/SRB_2245.JPG.jpeg';
 import s5_6 from '../../../client-photos/face-of-maharashtra/session-5/SRB_2247.JPG.jpeg';
 import s5_7 from '../../../client-photos/face-of-maharashtra/session-5/SRB_2252.JPG.jpeg';
-import s5_8 from '../../../client-photos/face-of-maharashtra/session-5/SRB_2255.JPG.jpeg';
+import s5_8 from '../../../client-photos/face-of-maharashtra/session-5/WhatsApp Image 2026-09-26 at 18.19.29.jpeg';
+import s5_9 from '../../../client-photos/face-of-maharashtra/session-5/WhatsApp Image 2026-09-26 at 18.19.30.jpeg';
 
 const sessions = [
-  { id: 1, label: 'SESSION 01', photos: [s1_1, s1_2, s1_3, s1_4, s1_5, s1_6, s1_7, s1_8, s1_9] },
-  { id: 2, label: 'SESSION 02', photos: [s2_1, s2_2, s2_3, s2_4, s2_5, s2_6, s2_7, s2_8, s2_9, s2_10] },
-  { id: 3, label: 'SESSION 03', photos: [s3_1, s3_2, s3_3, s3_4, s3_5, s3_6, s3_7, s3_8, s3_9] },
-  { id: 4, label: 'SESSION 04', photos: [s4_1, s4_2, s4_3, s4_4, s4_5, s4_6, s4_7, s4_8, s4_9, s4_10, s4_11, s4_12, s4_13, s4_14] },
-  { id: 5, label: 'SESSION 05', photos: [s5_1, s5_2, s5_3, s5_4, s5_5, s5_6, s5_7, s5_8] },
+  { id: 1, label: 'SEASON 01', photos: [s1_1, s1_2, s1_3, s1_4, s1_5, s1_6, s1_7, s1_8, s1_9] },
+  { id: 2, label: 'SEASON 02', photos: [s2_1, s2_2, s2_3, s2_4, s2_5, s2_6, s2_7, s2_8, s2_9, s2_10] },
+  { id: 3, label: 'SEASON 03', photos: [s3_1, s3_2, s3_3, s3_4, s3_5, s3_6, s3_7, s3_8, s3_9] },
+  { id: 4, label: 'SEASON 04', photos: [s4_1, s4_2, s4_3, s4_4, s4_5, s4_6, s4_7, s4_8, s4_9, s4_10, s4_11, s4_12, s4_13, s4_14] },
+  { id: 5, label: 'SEASON 05', photos: [s5_1, s5_2, s5_3, s5_4, s5_5, s5_6, s5_7, s5_8, s5_9] },
 ];
 
 const groomingItems = [
@@ -324,12 +325,12 @@ export function FaceOfMaharashtra() {
 
           {/* PREVIOUS SESSIONS */}
           <div className="divider-gold mb-16">
-            <span className="font-sans text-[9px] tracking-[0.32em] uppercase text-[#c9a96e]/60 whitespace-nowrap">Previous Sessions</span>
+            <span className="font-sans text-[9px] tracking-[0.32em] uppercase text-[#c9a96e]/60 whitespace-nowrap">Previous Seasons</span>
           </div>
 
           <motion.div {...revY(0.1)}>
-            <h3 className="font-serif text-[#faf8f4] text-2xl sm:text-3xl mb-3">Previous Sessions</h3>
-            <p className="font-sans text-[#faf8f4]/45 text-sm mb-10">Select a session to view its gallery.</p>
+            <h3 className="font-serif text-[#faf8f4] text-2xl sm:text-3xl mb-3">Previous Seasons</h3>
+            <p className="font-sans text-[#faf8f4]/45 text-sm mb-10">Select a season to view its gallery.</p>
 
             {/* Premium pageant-style session cards */}
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 mb-2">
@@ -380,7 +381,7 @@ export function FaceOfMaharashtra() {
               >
                 <span aria-hidden className="absolute top-1 right-2 font-serif text-[#c9a96e] select-none pointer-events-none" style={{ fontSize: '3rem', lineHeight: 1, opacity: 0.05 }}>6</span>
                 <span className="font-sans text-[8px] tracking-[0.3em] uppercase text-[#c9a96e]/60 block mb-2">Upcoming</span>
-                <span className="font-serif text-[#faf8f4] text-base block">SESSION 06</span>
+                <span className="font-serif text-[#faf8f4] text-base block">SEASON 06</span>
                 <span className="block mt-2 text-[10px] font-sans tracking-wider text-[#c9a96e]/40">Coming Soon</span>
               </button>
             </div>
@@ -420,7 +421,7 @@ export function FaceOfMaharashtra() {
               <div className="px-8 py-5 flex items-center justify-between gap-4" style={{ background: 'rgba(201,169,110,0.06)', borderBottom: '1px solid rgba(201,169,110,0.15)' }}>
                 <div className="flex items-center gap-4">
                   <span className="font-sans text-[8px] tracking-[0.38em] uppercase text-[#c9a96e] px-3 py-1" style={{ border: '1px solid rgba(201,169,110,0.35)' }}>Upcoming</span>
-                  <span className="font-serif text-[#faf8f4] text-base">SESSION 06</span>
+                  <span className="font-serif text-[#faf8f4] text-base">SEASON 06</span>
                 </div>
                 <span className="font-sans text-[9px] tracking-[0.24em] uppercase text-[#faf8f4]/40">Season 6</span>
               </div>

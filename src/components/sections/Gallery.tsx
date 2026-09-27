@@ -23,12 +23,36 @@ const GALLERY_FILES = [
   'FB_IMG_1779995625777.jpg (1).jpeg',
   'FB_IMG_1779995639772.jpg (1).jpeg',
   'FB_IMG_1779995646515.jpg (1).jpeg',
+  'FB_IMG_1790429044694.jpg.jpeg',
   'IMG_20250112_224722.jpg.jpeg',
   'IMG_20250501_012200.jpg.jpeg',
   'IMG_20250902_210722.jpg.jpeg',
   'S34A0786.JPG.jpeg',
   'SJT_4306.JPG.jpeg',
   'SP141138.JPG (1).jpeg',
+  'WhatsApp Image 2026-09-26 at 18.15.36.jpeg',
+  'WhatsApp Image 2026-09-26 at 18.15.38.jpeg',
+  'WhatsApp Image 2026-09-26 at 18.15.40.jpeg',
+  'WhatsApp Image 2026-09-26 at 18.15.41.jpeg',
+  'WhatsApp Image 2026-09-26 at 18.15.43.jpeg',
+  'WhatsApp Image 2026-09-26 at 18.15.45.jpeg',
+  'WhatsApp Image 2026-09-26 at 18.15.46 (1).jpeg',
+  'WhatsApp Image 2026-09-26 at 18.15.46.jpeg',
+  'WhatsApp Image 2026-09-26 at 18.15.47 (1).jpeg',
+  'WhatsApp Image 2026-09-26 at 18.15.47.jpeg',
+  'WhatsApp Image 2026-09-26 at 18.15.48.jpeg',
+  'WhatsApp Image 2026-09-26 at 18.15.49 (1).jpeg',
+  'WhatsApp Image 2026-09-26 at 18.15.49.jpeg',
+  'WhatsApp Image 2026-09-26 at 18.15.50.jpeg',
+  'WhatsApp Image 2026-09-26 at 18.15.52.jpeg',
+  'WhatsApp Image 2026-09-26 at 18.15.53 (1).jpeg',
+  'WhatsApp Image 2026-09-26 at 18.15.53.jpeg',
+  'WhatsApp Image 2026-09-26 at 18.15.54.jpeg',
+  'WhatsApp Image 2026-09-26 at 18.15.55 (1).jpeg',
+  'WhatsApp Image 2026-09-26 at 18.15.55.jpeg',
+  'WhatsApp Image 2026-09-26 at 18.15.56.jpeg',
+  'WhatsApp Image 2026-09-26 at 18.47.52 (1).jpeg',
+  'WhatsApp Image 2026-09-26 at 18.51.34.jpeg',
 ];
 
 const photos: { src: string; alt: string; contain: boolean }[] = GALLERY_FILES.map(
@@ -268,6 +292,12 @@ export function Gallery() {
           }
           .gallery-grid__img--contain {
             object-fit: contain;
+            object-position: center center;
+          }
+          /* Fix thumbnail cropping for Mine Diamonds Unlimited image */
+          .gallery-grid__img[src*="1790429044694"],
+          .gallery-grid__img[src*="18.47.52"],
+          .gallery-grid__img[src*="18.51.34"] {
             object-position: center center;
           }
           /* Tablet: 2 columns */
